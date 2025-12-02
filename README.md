@@ -1,26 +1,19 @@
-# House-pirce-prediction-model.py
-Predict house prices using Linear Regression. Clean code with data preprocessing, model training, evaluation (MAE/RMSE), visualization, and prediction function.
 
 House Price Prediction - Machine Learning Project
-
-Project Overview
+Project Overview:
 A comprehensive machine learning pipeline for predicting residential property prices using Linear Regression. This project implements a complete data science workflow from data preprocessing to model deployment with evaluation.
 
-Business Objective
+Business Objective:
 Develop an accurate pricing model for real estate properties to assist buyers, sellers, and real estate professionals in making informed decisions.
 
-Dataset Information
+Dataset Information:
 - Source: Kaggle House Price Prediction Dataset
 - Size: 545 property listings
 - Features: 12 property attributes
-- Target Variable: price (in Pakistani Rupees)
-- Price Range: Rs.1.75M - Rs.13.3M
-
-Technical Implementation
-
+- Target Variable: price (in Indian Rupees)
+- Price Range: ₹1.75M -  ₹13.3M
 Data Pipeline Architecture
 Raw Data -> Cleaning -> Feature Engineering -> Model Training -> Evaluation -> Deployment
-
 1. Data Preprocessing
 - Missing Value Handling: Complete case analysis (listings with missing data removed)
 - Feature Encoding:
@@ -35,12 +28,17 @@ Raw Data -> Cleaning -> Feature Engineering -> Model Training -> Evaluation -> D
 - Validation: Hold-out validation strategy
 
 3. Performance Metrics
-| Metric | Value | Interpretation |
-|--------|-------|----------------|
-| Mean Absolute Error (MAE) | Rs.979,680 | Average prediction deviation |
-| Root Mean Squared Error (RMSE) | Rs.1,331,071 | Error magnitude with outlier penalty |
 
-Results Analysis
+Metric
+Value
+Interpretation
+Mean Absolute Error (MAE)
+Rs.979,680
+Average prediction deviation
+Root Mean Squared Error (RMSE)
+Rs.1,331,071
+Error magnitude with outlier penalty
+
 
 Model Insights
 - Feature Importance: Property area and bedroom count show highest correlation with price
@@ -48,12 +46,10 @@ Model Insights
 - Amenity Value: Air conditioning and parking facilities significantly impact valuation
 
 Usage Instructions
-
-Prerequisites
+Prerequisites:
 Python 3.8+
 pip install pandas scikit-learn matplotlib
-
-Execution
+Execution:
 1. Clone repository
 git clone https://github.com/Araiba-Suhail/house-price-prediction.git
 
@@ -65,7 +61,6 @@ python house_price_prediction.py
 
 Making Predictions
 from house_price_prediction import predict_house_price
-
 Example: Predict price for a 3BHK semi-furnished apartment
 prediction = predict_house_price(
     area=3000,          # Square feet
@@ -86,19 +81,16 @@ print(f"Estimated Market Value: {prediction}")
 Output: Estimated Market Value: Rs.5,420,000
 
 Methodology Details
-
 Feature Engineering Strategy
 1. Numerical Features: Used as-is (area, bedrooms, bathrooms, stories, parking)
 2. Binary Features: Boolean conversion (amenities, location factors)
 3. Ordinal Features: Rank-based encoding (furnishing quality)
-
 Evaluation Protocol
 1. Training Phase: 80% data for parameter estimation
 2. Testing Phase: 20% unseen data for unbiased evaluation
 3. Error Metrics: MAE for business interpretation, RMSE for model refinement
 
 Visual Analytics
-
 1. Prediction Accuracy Plot
 - X-axis: Actual market prices
 - Y-axis: Model predictions  
@@ -109,8 +101,6 @@ Visual Analytics
 - Distribution: Approximately normal with mean near zero
 - Variance: Error spread indicates prediction consistency
 - Outliers: Few extreme errors suggest data anomalies or model limitations
-
-
 License
 MIT License - See LICENSE file for details
 
@@ -121,4 +111,6 @@ Contributing
 4. Push to the branch
 5. Open a Pull Request
 
-Last Updated: November 2023 | Version: 1.0.0
+
+
+
