@@ -29,8 +29,6 @@ Raw Data -> Cleaning -> Feature Engineering -> Model Training -> Evaluation -> D
 
 3. Performance Metrics
 
-3. Performance Metrics
-
 Mean Absolute Error (MAE):  ₹979,680 - This shows the average prediction deviation.
 
 Root Mean Squared Error (RMSE): ₹1,331,071 - This indicates the error magnitude with outlier penalty.
@@ -49,30 +47,8 @@ Execution:
 git clone https://github.com/Araiba-Suhail/House-pirce-prediction-model.py
 2. Navigate to directory
 cd house-price-prediction
-
-4. Run model
-python house_price_prediction.py
-
-Making Predictions
-from house_price_prediction import predict_house_price
-Example: Predict price for a 3BHK semi-furnished apartment
-prediction = predict_house_price(
-    area=3000,          # Square feet
-    bedrooms=3,         # Number of bedrooms
-    bathrooms=2,        # Number of bathrooms
-    stories=2,          # Building stories
-    mainroad='yes',     # Main road access
-    guestroom='no',     # Guest room availability
-    basement='yes',     # Basement present
-    hotwaterheating='no', # Water heating
-    airconditioning='yes', # AC availability
-    parking=2,          # Parking spaces
-    prefarea='yes',     # Preferred area
-    furnishingstatus='semi-furnished' # Furnishing level
-)
-
-print(f"Estimated Market Value: {prediction}")
-Output: Estimated Market Value: ₹5,420,000
+3. Run model
+python House_price_prediction_model.py
 
 Methodology Details
 Feature Engineering Strategy
@@ -85,16 +61,9 @@ Evaluation Protocol
 3. Error Metrics: MAE for business interpretation, RMSE for model refinement
 
 Visual Analytics
-1. Prediction Accuracy Plot
-- X-axis: Actual market prices
-- Y-axis: Model predictions  
-- Red Line: Perfect prediction line (y=x)
-- Interpretation: Cluster proximity to diagonal indicates prediction accuracy
+1. Prediction Accuracy Scatter Plot
+2. Error Distribution Analysis Historgram
 
-2. Error Distribution Analysis
-- Distribution: Approximately normal with mean near zero
-- Variance: Error spread indicates prediction consistency
-- Outliers: Few extreme errors suggest data anomalies or model limitations
 License
 MIT License - See LICENSE file for details
 
