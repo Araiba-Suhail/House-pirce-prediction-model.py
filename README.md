@@ -1,4 +1,4 @@
-
+DevelopersHub Corporation internship project
 House Price Prediction - Machine Learning Project
 Project Overview:
 A comprehensive machine learning pipeline for predicting residential property prices using Linear Regression. This project implements a complete data science workflow from data preprocessing to model deployment with evaluation.
