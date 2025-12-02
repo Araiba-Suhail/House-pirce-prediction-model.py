@@ -29,16 +29,11 @@ Raw Data -> Cleaning -> Feature Engineering -> Model Training -> Evaluation -> D
 
 3. Performance Metrics
 
-Metric
-Value
-Interpretation
-Mean Absolute Error (MAE)
- ₹ 979,680
-Average prediction deviation
-Root Mean Squared Error (RMSE)
- ₹ 1,331,071
-Error magnitude with outlier penalty
+3. Performance Metrics
 
+Mean Absolute Error (MAE):  ₹979,680 - This shows the average prediction deviation.
+
+Root Mean Squared Error (RMSE): ₹1,331,071 - This indicates the error magnitude with outlier penalty.
 
 Model Insights
 - Feature Importance: Property area and bedroom count show highest correlation with price
