@@ -46,7 +46,7 @@ Execution:
 1. Clone repository
 git clone https://github.com/Araiba-Suhail/House-pirce-prediction-model.py
 2. Navigate to directory
-cd house-price-prediction
+cd House_price_prediction_Model.py
 3. Run model
 python House_price_prediction_model.py
 
