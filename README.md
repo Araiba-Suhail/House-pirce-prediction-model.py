@@ -33,10 +33,10 @@ Metric
 Value
 Interpretation
 Mean Absolute Error (MAE)
-Rs.979,680
+ ₹ 979,680
 Average prediction deviation
 Root Mean Squared Error (RMSE)
-Rs.1,331,071
+ ₹ 1,331,071
 Error magnitude with outlier penalty
 
 
@@ -51,8 +51,7 @@ Python 3.8+
 pip install pandas scikit-learn matplotlib
 Execution:
 1. Clone repository
-git clone https://github.com/Araiba-Suhail/house-price-prediction.git
-
+git clone https://github.com/Araiba-Suhail/House-pirce-prediction-model.py
 2. Navigate to directory
 cd house-price-prediction
 
@@ -78,7 +77,7 @@ prediction = predict_house_price(
 )
 
 print(f"Estimated Market Value: {prediction}")
-Output: Estimated Market Value: Rs.5,420,000
+Output: Estimated Market Value: ₹5,420,000
 
 Methodology Details
 Feature Engineering Strategy
